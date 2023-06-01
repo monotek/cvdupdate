@@ -37,6 +37,6 @@ jobs:
       - name: Run Dockerimage
         run: |
           docker load --input /tmp/cvdupdate-local.tar
-          docker run -d --net=host cvdupdate-local serve-
+          docker run -d --net=host cvdupdate-local serve
           sleep 30
-          curl --fail --silent --output /dev/null http://localhost:8000/main.cvd
+          curl --fail --output /dev/null http://localhost:8000/main.cvd
