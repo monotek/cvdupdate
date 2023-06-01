@@ -279,6 +279,7 @@ This tool includes a `--serve` feature that will host the current database direc
 
 You can test it by running `freshclam` or `freshclam.exe` locally, where you've configured `freshclam.conf` with:
 
+
 ```
 DatabaseMirror http://localhost:8000
 ```
